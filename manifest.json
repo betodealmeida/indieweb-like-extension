@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "IndieWeb like",
+  "version": "0.1",
+
+  "description": "Allow users to like IndieWeb pages using an over-engineered system",
+  "homepage_url": "https://github.com/betodealmeida/indieweb-like-extension",
+  "icons": {
+    "48": "icons/heart-48.png",
+    "96": "icons/heart-96.png"
+  },
+
+  "permissions": [
+    "activeTab",
+	"*://taliesin.taoetc.org/*",
+	"webRequest"
+]
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/heart-32.png",
+    "default_title": "IndieWeb like"
+  },
+
+  "web_accessible_resources": [
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
